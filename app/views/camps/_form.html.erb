@@ -1,0 +1,49 @@
+<!- Camp form with all necesary info ->
+
+
+<%= form_for(@camp) do |f| %>
+  <% if @camp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@camp.errors.count, "error") %> prohibited this camp from being saved:</h2>
+
+      <ul>
+      <% @camp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+<!- The camp form below provides all the necessary info required to enter in a new camp ->
+
+
+<table class="neato-forms">
+  <tbody>
+    <tr>
+      <td><%= f.label :week_id %><br><%= f.collection_select(:week_id, Week.all, :id, :start_date) %></td> 
+    </tr>
+    <tr>
+      <td><%= f.label :name %><br><%= f.text_field :name, placeholder: "Some Camp" %> </td>
+      <td><%= f.label :location %><br><%= f.text_field :location, placeholder: "JO North" %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :fee %><br><%= f.number_field :fee %></td>
+      <td><%= f.label :registration_limit %><br><%= f.number_field :kid_limit %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :age_Range %><br><%= f.select :age_min, (5..14) %> to <%= f.select :age_max, (5..14) %></td>
+      <td><%= f.label :start_and_end_time %><br><%= f.time_select :start_time %> to <%= f.time_select :end_time %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :extended_start_time %><br><%= f.time_select :ext_start_time %></td>
+      <td><%= f.label :extended_end_time %><br><%= f.time_select :ext_end_time %></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="taller"><%= f.label :description %><br><%= f.text_area :description, :size=>"100%x10%" %></td>
+    </tr>
+    
+  </tbody>
+</table>
+ 
+  <div class="actions">  <%= f.submit %></div>
+<% end %>

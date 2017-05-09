@@ -1,0 +1,133 @@
+// Place all the styles related to the Camps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* General Page CSS */
+
+.field {
+	margin: 0 auto;
+	max-width: 940px;
+	padding-bottom: 10px;
+}
+
+.none {
+  border: none;
+  width: 50%;
+}
+
+body {
+	  margin: 0;
+	  padding: 0;
+	  font-family: "Poppins", sans-serif;
+	  font-size: 100%;
+}
+
+/*navigation*/
+
+
+header nav {
+	  text-align: right;
+	  background: #cc0000;
+	  color: #fff;
+	  font-size: 1em;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  overflow: hidden;
+}
+header nav a {
+	  color: inherit;
+	  text-decoration: none;
+	  display: inline-block;
+	  padding: 1em 1em 1.2em;
+	  -webkit-transition: all .3s ease-in;
+}
+
+nav {
+	  position: fixed;
+	  font-weight: bold;
+	  transition: all 0.5s ease-in;
+}
+
+h6 {
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+  font-family: "Architects Daughter";
+  font-size: 280%;
+  text-align: left;
+}
+
+.company-name {
+  float: left;
+  font-size: 26px;
+}
+
+.camp-heading {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 300%;
+  margin: 2% auto;
+}
+
+/* Camp Show Pages */
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+.camps-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Architects Daughter", cursive !important;
+  font-size: 360%;
+  padding-top: 5%;
+  margin: 0px;
+}
+
+p.subtext {
+  text-align:center;
+  margin: 0px auto 10px;
+  line-height: 120%;
+}
+
+.content {
+  font-family: "Poppins", sans-serif;
+  font-size: 88%;
+  /*color: #4D4D4D;*/
+}
+
+.footer a:link {
+  color: gray;
+}
+
+/* New/Edit Form Table */
+table.neato-forms{
+  width: 100%;
+  border: none;
+  height: 60px;
+}
+
+.neato-forms td{
+  font-family:"Poppins";
+  font-size: 120%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.taller{
+  height: 200px;
+}
+
+.sports {
+  width: 20%;
+  float: right;
+  padding-bottom: 12px;
+  padding-right: 50px;
+}
+
+
+
+
+
+

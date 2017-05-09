@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+<!- Page displays an individual camper with all necesary info ->
+
+<h3>Camper Information</h3>
+
+<!- Displays any present errors with a message ->
+
+  <% @camper.memberships.each do |m|%>
+      <% if m.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(m.errors.count, "error") %> prohibited this membership from being saved:</h2>
+
+            <ul>
+              <% m.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+  <% end %>
+
+<!- Camper's info displayed in a table ->
+
+<table class = "neato-forms">
+  <tbody>
+    <tr>
+      <td><strong> Full Name: </strong><%= @camper.fullname %></td>
+      <td><strong>Age: </strong><%= @camper.age %></td>
+      <td><strong>Gender:</strong>
+        <% if (@camper.gender) %>
+          M
+        <% else %>
+          F
+        <% end %>
+      </td>
+      <td><strong>Birthday: </strong><%= @camper.birthday.strftime "%m-%d-%Y" %></td>
+    </tr>
+    <tr>
+      <td><strong>Medical Form Received:</strong>
+        <% if @camper.medicalcompleted %>
+            yes
+        <% else %>
+            no
+        <% end%></td>
+    </tr>
+    <tr>
+      <td> <strong>Camps: </strong></td>
+    </tr>
+    <tr>
+      <td>
+        <table class="camper-camps">
+          <tbody>
+        <% if @camper.camps %>
+          <% @camper.camps.each do |camp| %>
+            <tr>
+              <td><%= camp.name %></td>
+              <td><%= link_to 'Info', camp_path(camp) %> <%= link_to 'Remove', destroy_camp_camper_path(camp: camp ), method: :delete, data: { confirm: 'Are you sure you want to remove this camp? Your child will be removed from the list and may not be able to rejoin.'} %></td>
+            </tr>
+          <%end%>
+        <%end%>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><%= link_to 'Add Camps', choose_camps_camper_path(@camper) %></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+<!- Guardian's info displayed in a table ->
+
+<h3>Guardian Information</h3>
+
+<table class="neato-forms">
+  <tr>
+    <td><strong>Name: </strong><%= @camper.gfullname %></td>
+    <td><strong>Birthday: </strong><%= @camper.gbirthday.strftime "%m-%d-%Y" %></td>
+  </tr>
+  <tr>
+    <td><strong>Address: </strong><br><%= @camper.street %> <br>
+    <%= @camper.city %> <%= @camper.state %> <%= @camper.zip %></td>
+    <td><strong>Phone:</strong> <br>
+    <%= @camper.homephone %> (home) <br>
+    <%= @camper.wcphone %> (work)</td>
+  </tr>
+  <tr>
+    <td><strong>Email: </strong><%= @camper.email %></td>
+  </tr>
+  </table>
+  
+  <table class="neato-forms">
+  <tr>
+    <td><strong>Authorized Guardians:</strong><%= @camper.authguardians %></td>
+  </tr>
+  <tr>
+    <td><strong>Unauthorized Guardians:</strong><%= @camper.prohibited %></td>
+  </tr>
+</table>
+
+<br><br>
+  <%= link_to 'Edit', edit_camper_path(@camper) %>

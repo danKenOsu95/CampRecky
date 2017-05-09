@@ -1,0 +1,56 @@
+<!- Index page for listing camps ->
+
+
+<h1 class="camp-heading">Listing Camps</h1>
+
+<!- Table headers ->
+
+
+
+<h6>Click table headers to sort information!</h6>
+<table class="sortable">
+  <thead>
+    <tr>
+      <th class="table-border">Name</th>
+      <th class="table-border">Week</th>
+      <th class="table-border">Location</th>
+      <th class="table-border">Age Range</th>
+      <th class="table-border">Extended Start</th>
+      <th class="table-border">Time</th>
+      <th class="table-border">Extended End</th>
+      <th class="table-border">Fee</th>
+      <th class="table-border">Total Enrolled</th>
+      <th class="table-border">Registration limit</th>
+      <th class="table-border">Actions</th>
+
+    </tr>
+  </thead>
+
+<!- Table cell data of all necessary listed camps info ->
+
+
+  <tbody>
+    <% @camps.each do |camp| %>
+      <tr>
+        <td><%= link_to camp.name, camp %></td>
+        <td><% if camp.week_id %>
+                <%= camp.week.start_date.strftime("%-m-%-d-%Y") %>
+              <% end %>
+        </td>
+        <td><%= camp.location %></td>
+        <td><%= camp.age_min %> - <%= camp.age_max %></td>
+        <td><%= camp.ext_start_time.strftime("%-l:%M %p") %></td>
+        <td><%= camp.start_time.strftime("%-l:%M %p") %> - <%= camp.end_time.strftime("%-l:%M %p") %></td>
+        <td><%= camp.ext_end_time.strftime("%-l:%M %p") %></td>
+        <td>$<%= camp.fee %></td>
+        <td><%= camp.campers.length %></td>
+        <td><%= camp.kid_limit %></td>
+        <td><%= link_to 'Edit', edit_camp_path(camp) %> <%= link_to 'Destroy', camp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="footer"><%= link_to 'New Camp', new_camp_path %></div>
+</div>

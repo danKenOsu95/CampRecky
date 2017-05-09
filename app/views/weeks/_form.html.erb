@@ -1,0 +1,33 @@
+<%= form_for(@week) do |f| %>
+  <% if @week.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@week.errors.count, "error") %> prohibited this week from being saved:</h2>
+
+      <ul>
+      <% @week.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+    <div class="field">
+    <%= f.label 'Start date' %><br>
+    <%= f.date_select :start_date, {order: [:month, :day, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year - 18, end_year: Date.today.year}, {required: true} %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'End date' %><br>
+    <%= f.date_select :end_date, {order: [:month, :day, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year - 18, end_year: Date.today.year}, {required: true} %>
+  </div>
+  <div class="field">
+    <%= f.label 'Theme' %><br>
+    <%= f.text_field :theme %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

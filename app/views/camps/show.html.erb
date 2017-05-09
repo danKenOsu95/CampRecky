@@ -1,0 +1,45 @@
+<%# Shows individual camp's information %>
+
+<p id="notice"><%= notice %></p>
+
+<%# Header with camp name (font: Architects Daughter), week, and theme. (fonts: Lato). Centered %>
+   
+<h3 class="camps-title"><strong><%= @camp.name %></strong></h3>
+<div class="content">
+  <p class="subtext">
+    <%#  "-"s before m(onth) & d(ay) removes leading 0x %>
+    Week <%= @camp.week.id%>, <%= @camp.week.start_date.strftime("%B %-d") %> - 
+      <% if @camp.week.start_date.month != @camp.week.end_date.month %>
+        <%= @camp.week.end_date.strftime("%B")  %> 
+      <% end %>
+      <%= @camp.week.end_date.strftime("%-d") %>
+    <br>Theme: <%= @camp.week.theme %>
+    <%# <%= image_tag("genericsports.png", :alt => "camp kids", :class => "sports" ) %>
+  </p>
+
+<%# Camp information. Left aligned, Overall font change to Lato %>
+  <p>
+    <strong>Ages <%= @camp.age_min %> to <%= @camp.age_max %></strong><br>
+    <strong>Time</strong>: <%= @camp.start_time.strftime("%-l:%M %p") %> to <%= @camp.end_time.strftime("%-l:%M %p") %><br>
+    <%# "-"s before l(hour) removes leading 0x, M(onth), p(AM/PM) %>
+    <strong>Location</strong>: <%= @camp.location %> 
+    
+    <br><br>
+    <%= @camp.description %>
+  </p>
+
+  <p>
+    <strong>Extended Start Time:</strong>
+    <%= @camp.ext_start_time.strftime("%-l:%M %p") %>
+    <br>
+    <strong>Extended End Time:</strong>
+    <%= @camp.ext_end_time.strftime("%-l:%M %p") %>
+
+    <br><br>
+    <strong>Fee: $</strong><%= @camp.fee %>
+  </p>
+
+  <br><br>  
+    <%# Edit -> specific camp, Back -> camp index page (table of camps) %>
+    <%= link_to 'Edit', edit_camp_path(@camp) %> | <%= link_to 'Back', camps_path %>
+</div>

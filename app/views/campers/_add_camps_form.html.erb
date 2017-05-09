@@ -1,0 +1,54 @@
+<%# form for individual camper to select camps to enroll in %>
+
+
+<%= form_tag update_camps_camper_path(@camper), method: 'choose_camps' do  %>
+
+<!- Table header information->
+
+    <table>
+      <thead>
+      <tr>
+        <th>Add</th>
+        <th>Name</th>
+        <th>Week</th>
+        <th>Location</th>
+        <th>Age</th>
+        <th>Time</th>
+        <th>Fee</th>
+        <th>Total Enrolled</th>
+        <th>Registration Limit</th>
+      </tr>
+      </thead>
+
+<!- Each cell data info->
+
+      <tbody>
+      <% @camps.each do |camp| %>
+          <tr>
+            <td>
+              <%# the only form element - check box %>
+              <%= check_box_tag 'membs[]', camp.id %>
+            </td>
+            <td><%= camp.name %></td>
+            <td><% if camp.week %>
+                  <%= camp.week.start_date %>
+              <% end %>
+            </td>
+            <td><%= camp.location %></td>
+            <td><%= camp.age_min %> - <%= camp.age_max %></td>
+            <td><%= camp.start_time.to_s(:time) %> - <%= camp.end_time.to_s(:time) %></td>
+            <td>$<%= camp.fee %></td>
+            <td><%= camp.campers.length %></td>
+            <td><%= camp.kid_limit %></td>
+
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+
+
+    <div class="actions">
+      <%= submit_tag "Submit" %>
+    </div>
+<% end %>

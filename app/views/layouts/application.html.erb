@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title class="test">Camp Recky</title>
+
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
+  
+  <header>
+  <nav class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="150">
+    <%= image_tag("buckeye-leaf.png", :alt => "buckeye-leaf", :class => "b-leaf" ) %>
+    <a class="scroll-to-section company-name" href=<%= welcome_index_path %>>Camp Recky</a>
+    <a class="scroll-to-section" href= <%= welcome_index_path%> >Home</a>
+    <a class="scroll-to-section" href= <%= camps_path %> >Camps</a>
+    <a class="scroll-to-section" href= <%= requirements_path %>>Requirements</a>
+    <div class="user">
+    <% if user_signed_in? %>
+      <%= link_to current_user.email, campers_path %>  | <a href= <%= new_user_session_path %> > <%= link_to 'Sign out', destroy_user_session_path, method: :delete%>
+    <% else %> 
+      <a href="/users/sign_up">Sign Up</a> | <%= link_to "Sign In", new_user_session_path %>
+    <%end%>
+
+
+</div>
+    
+  </nav>
+  </header>
+</head>
+<body>
+<div class="wrapper">
+
+<%= yield %>
+ 
+</div>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!- Three different sections for camps, requirements, and how to enroll->
+
+
+<section id="camps" class="wide-info">
+  <h1 class="welcome-title">Camps</h1>
+  <div class="border"></div>
+    <p>Welcome to Camp Recky! We are so excited for another summer of sunshine and fun with your camper or campers! We look forward to a safe and exciting summer 2017. Please spend some time carefully reading the website for requirements and how to enroll. This website is designed to answer questions you may have regarding Camp Recky registration.   </p>
+<div class="btn-wrapper"><a href= <%= camps_path %> ><button class="btn striped-shadow dark"><span>Camps</span></button></a></div>
+<%= image_tag("kid1.png", :alt => "camp kids", :class => "camp-kids" ) %>
+ 
+</section>
+
+<section id="requirements" class="wide-info">
+  <h1 class="welcome-title">Requirements</h1>
+  <div class="border"></div>
+    <p>In accordance with the mission statement of the Department of Recreational Sports, the Camp Recky program mission is to foster social and physical childhood development, promote active lifestyles, and provide educational leadership opportunities to the Ohio State community. Please fully read Camp Recky requirements to make sure you are ready for the summer. </p>
+<div class="btn-wrapper"><a href= <%= requirements_path %> ><button class="btn striped-shadow dark"><span>Requirements</span></button></a></div>
+<%= image_tag("kid2.png", :alt => "camp kids", :class => "camp-kids" ) %>
+</section>
+
+<section id="enroll" class="wide-info">
+  <h1 class="welcome-title">Enroll</h1>
+  <div class="border"></div>
+     <p>Once you have read the requirements for Camp Recky registration feel free to enroll your camper. If you have any other questions the telephone at the Recreation and Physical Activity Center will be staffed by a Camp Recky staff person Monday through Friday, June 13 - August 19, from 8:30 a.m. to 4:30 p.m. </p>
+<p>If you need to contact camp during these hours please call or email:
+<p><%= image_tag("phone icon.png", :alt => "phone icon", :class => "iconography" ) %> (614) 688-8787</p> 
+<p> <a href="mailto:aeggroup@osu.edu?Subject=Camp%20Recky" target="_top" class="email"><%= image_tag("email icon.png", :alt => "email icon", :class => "iconography mail" ) %>Camp Recky email</a></p>
+<%= image_tag("home icon.png", :alt => "home icon", :class => "iconography home" ) %> <p>Department of Recreational Sports, Recreation and Physical Activity Center <br>337 W. 17th Ave., Room B162, Columbus, OH 43210-1224.  </p>
+<div class="btn-wrapper"><a href= <%= enroll_path %> ><button class="btn striped-shadow dark"><span>Click Here to Enroll</span></button></a></div>
+
+</section>
+
+

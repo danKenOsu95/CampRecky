@@ -1,0 +1,137 @@
+<!- Enrolling form ->
+
+
+<%= form_for(@camper) do |f| %>
+  <% if @camper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@camper.errors.count, "error") %> prohibited this camper from being saved:</h2>
+
+      <ul>
+      <% @camper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <h3>The following should be answered about the camper. </h3>
+<table class = "neato-forms" id="squish">
+  <tbody>
+    <tr>
+      <td> <%=f.label 'Full Name' %><br><%= f.text_field :fullname %></td>
+      <td> <%=f.label :age %><br><%= f.number_field :age %> </td>
+      <td> <%=f.label :gender %> <br><%= f.radio_button(:gender, "true")%>M <%= f.radio_button(:gender, "false")%>F</td>
+    </tr>
+    <tr>
+      <td colspan="3">
+      <%= f.label 'Date of birth' %><br><%= f.date_select :birthday, {order: [:month, :day, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year - 18, end_year: Date.today.year}, {required: true} %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!- Form for guardian/parent to fill out ->
+
+    <h3>The following should be answered about the guardian of the camper. </h3>
+
+
+<table class = "neato-forms">
+<tbody>
+  <tr>
+    <td> <%=f.label 'Full Name' %><br><%= f.text_field :gfullname %></td>
+    <td><%= f.label 'Date of birth' %><br><%= f.date_select :gbirthday, {order: [:month, :day, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year - 18, end_year: Date.today.year - 90}, {required: true} %>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <strong><%= 'Address' %></strong> <br> <%= f.label 'Street' %><br><%= f.text_field :street %>
+    </td>
+    <td>
+      <br><%= f.label 'City' %><br><%= f.text_field :city %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.label 'State' %><br><%= f.text_field :state %>
+    </td>
+    <td>
+      <%= f.label 'Zip' %><br><%= f.text_field :zip %>
+    </td>
+  </tr>
+</tbody>
+<tbody>
+  <tr>
+    <td>
+      <strong><%= 'Emergency Contact Information' %></strong> <br> <%= f.label 'Home Phone' %><br><%= f.text_field :homephone %>
+    </td>
+    <td>
+      <br><%= f.label 'Work Phone' %><br><%= f.text_field :wcphone %>
+    </td>
+  </tr>
+  <tr>
+    <td><%= f.label 'Email' %><br><%= f.text_field :email %> </td>
+  </tr>
+</tbody>
+</table>
+
+<table class = "neato-forms">
+  <tbody>
+    <tr></tr>
+    <tr>
+    <td><%= f.label 'List guardians who are authorized to pick up the camper' %><br><%= f.text_area :authguardians, :size=>"110%x4%" %></td>
+    </tr>
+    <td><%= f.label 'List guardians who are prohibited from picking up the camper' %><br>
+    <%= f.text_area :prohibited, :size=>"110%x4%" %></td>
+  </tbody>
+</table>
+
+<p class = "neato-forms"> Upload for medical form: </p>
+
+<body onload="myFunction()">
+
+<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+
+<script type="text/javascript">
+
+function myFunction(){
+    var x = document.getElementById("myFile");
+    var txt = "";
+    if ('files' in x) {
+        if (x.files.length == 0) {
+            txt = "Select one or more files.";
+        } else {
+            for (var i = 0; i < x.files.length; i++) {
+                txt += "<br><strong>" + (i+1) + ". file</strong><br>";
+                var file = x.files[i];
+                if ('name' in file) {
+                    txt += "name: " + file.name + "<br>";
+                }
+                if ('size' in file) {
+                    txt += "size: " + file.size + " bytes <br>";
+                }
+            }
+        }
+    } 
+    else {
+        if (x.value == "") {
+            txt += "Select one or more files.";
+        } else {
+            txt += "The files property is not supported by your browser!";
+            txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+        }
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+</script>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

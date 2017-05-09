@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="camp-heading">Listing Campers</h1>
+<table>
+  <thead>
+    <tr>
+      <th class="table-border">Campers</th>
+      <th class="table-border">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campers.each do |camper| %>
+      <tr>
+        <td><%= link_to camper.fullname, camper %></td>
+        <td><%= link_to 'Edit', edit_camper_path(camper) %> <%= link_to 'Destroy', camper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'New Camper', new_camper_path %>

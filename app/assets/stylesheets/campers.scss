@@ -1,0 +1,57 @@
+// Place all the styles related to the Camps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container,
+.actions {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.camp-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 300%;
+  margin: 2% auto;
+}
+
+/* New/Edit Form Table */
+table.neato-forms{
+  width: 100%;
+  border: none;
+  height: 60px;
+}
+
+.neato-forms td{
+  font-family:"Poppins";
+  font-size: 120%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.taller{
+  height: 200px;
+}
+
+
+/* Camper's list of Camps table */
+table.camper-camps {
+  font-family: "Poppins";
+  width:100%;
+  border: none;
+}
+
+.camper-camps td{
+  text-align: left;
+  font-size: 120%;
+  line-height: 70%;
+  
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  
+}
+
+

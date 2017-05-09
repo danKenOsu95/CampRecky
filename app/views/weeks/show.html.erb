@@ -1,0 +1,26 @@
+<div class="wrapper">
+<p id="notice"><%= notice %></p>
+
+<h3>Week Information</h3>
+
+
+
+<p>
+  <strong>Start Date:</strong>
+  <%= @week.start_date %>
+</p>
+
+  <p>
+    <strong>End Date:</strong>
+    <%= @week.end_date %>
+  </p>
+
+  <p>
+    <strong>Theme:</strong>
+    <%= @week.theme %>
+  </p>
+
+<br><br>
+<%= link_to 'Edit', edit_week_path(@week) %> |
+<%= link_to 'Back', weeks_path %>
+</div>

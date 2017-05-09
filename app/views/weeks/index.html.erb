@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="camp-heading">Listing Weeks</h1>
+<div class="wrapper">
+<table>
+  <thead>
+    <tr>
+      <th >Start Date</th>
+      <th >End Date</th>
+      <th >Theme</th>
+      <th >Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weeks.each do |week| %>
+      <tr>
+        <td><%= link_to week.start_date.strftime("%-m-%-d-%Y"), week %></td>
+        <td><%= link_to week.end_date.strftime("%-m-%-d-%Y"), week %></td>
+        <td><%= week.theme %></td>
+        <td><%= link_to 'Edit', edit_week_path(week) %>  <br> <%= link_to 'Destroy', week, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Week', new_week_path %>
+</div>
