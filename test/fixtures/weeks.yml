@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theme_key: 1
+  start_date: MyString
+  string: MyString
+  end_date: MyString
+  string: MyString
+
+two:
+  theme_key: 1
+  start_date: MyString
+  string: MyString
+  end_date: MyString
+  string: MyString

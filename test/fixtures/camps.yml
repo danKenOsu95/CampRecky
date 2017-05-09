@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  theme: MyString
+  location: MyString
+  age_min: 1
+  age_max: 1
+  start_time: 2017-03-27 15:27:38
+  end_time: 2017-03-27 15:27:38
+  ext_end_time: 2017-03-27 15:27:38
+  ext_start_time: 2017-03-27 15:27:38
+  member_fee: 1
+  non_member_fee: 1
+  two_week: false
+  lunch_fee: false
+
+two:
+  name: MyString
+  theme: MyString
+  location: MyString
+  age_min: 1
+  age_max: 1
+  start_time: 2017-03-27 15:27:38
+  end_time: 2017-03-27 15:27:38
+  ext_end_time: 2017-03-27 15:27:38
+  ext_start_time: 2017-03-27 15:27:38
+  member_fee: 1
+  non_member_fee: 1
+  two_week: false
+  lunch_fee: false

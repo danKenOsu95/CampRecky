@@ -1,0 +1,1268 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:10:04 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:10:05 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.8ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.7ms)
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (3.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCamps (20170327192738)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "theme" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" datetime, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170327192738"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Migrating to RemoveThemeFromCamps (20170327193808)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "theme" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" datetime, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" datetime, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" datetime, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" time, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" time, "ext_start_time" datetime, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (9.8ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (2.4ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" datetime, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" datetime, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170327193808"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCampers (20170329182139)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "glname" varchar, "gfname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170329182139"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddCampersForeignKeys (20170407141348)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "camps" ADD "enrolled_camper_id" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "camps" ADD "waitListed_camper_id" integer
+  [1m[36m (4.4ms)[0m  [1mALTER TABLE "campers" ADD "enrolled_camp_id" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "campers" ADD "waitListed_camp_id" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170407141348"]]
+  [1m[35m (9.3ms)[0m  commit transaction
+Migrating to RemoveGfname (20170407163715)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "glname" varchar, "gfname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "campers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "glname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (2.4ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "campers"
+  [1m[36m (10.1ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170407163715"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeCamperList (20170407165520)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acampers"
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acampers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170407165520"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Migrating to ChangeCamperListDefault (20170407170542)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '--- []
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "campers"
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "prohibited" varchar DEFAULT '--- []
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "campers"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "prohibited" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (8.4ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170407170542"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeCamperListDefault2 (20170407170957)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "prohibited" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (5.6ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar, "prohibited" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acampers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar, "prohibited" varchar DEFAULT '---
+:from: "--- []\\n"
+:to: false
+', "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acampers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170407170957"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+Migrating to ChangeCamperPhoneToString (20170407171232)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" integer, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "campers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" integer, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "campers"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "campers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "acampers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acampers"[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170407171232"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateThemes (20170409000038)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "start_date" datetime, "end_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170409000038"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateWeeks (20170409210238)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "theme_key" integer, "start_date" varchar, "string" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170409210238"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveDateFromTheme (20170409211404)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "athemes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "start_date" datetime, "end_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "themes"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "themes"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "end_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "athemes"[0m
+  [1m[35m (4.3ms)[0m  DROP TABLE "athemes"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "athemes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "end_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "themes"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "themes"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "athemes"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "athemes"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170409211404"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Migrating to ChangeWeekColumnName (20170409213259)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "key" integer, "start_date" varchar, "string" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "weeks"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "weeks"
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "key" integer, "start_date" varchar, "string" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aweeks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "aweeks"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170409213259"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeCampThemeWeekTables (20170409214952)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "key" integer, "start_date" varchar, "string" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "weeks"
+  [1m[36m (2.9ms)[0m  [1mDROP TABLE "weeks"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "key" integer, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aweeks"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aweeks"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "themes" ADD "week_key" integer[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "camps" ADD "theme_key" integer
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "athemes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "week_key" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "themes"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "themes"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "week_key" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "athemes"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "athemes"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "key" integer, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "weeks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "weeks"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aweeks"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aweeks"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170409214952"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+Migrating to RemoveKeyColumns (20170409215643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "weeks"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "weeks"
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aweeks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "aweeks"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "athemes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "week_key" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "themes"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "themes"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "week_key" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "athemes"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "athemes"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170409215643"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveCamperCampForeignKeys (20170410191046)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "enrolled_camper_id" integer, "waitListed_camper_id" integer, "theme_key" integer) [0m
+  [1m[35m (0.9ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "waitListed_camper_id" integer, "theme_key" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "waitListed_camper_id" integer, "theme_key" integer) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "enrolled_camp_id" integer, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "waitListed_camp_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acampers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean, "waitListed_camp_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "grade" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acampers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170410191046"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+Migrating to AddSessionColumns (20170410193343)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "camps" ADD "morning_session" boolean
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "camps" ADD "afternoon_session" boolean[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170410193343"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddHasThemes (20170410195820)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "camps" ADD "has_theme" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170410195820"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateMemberships (20170410201231)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp_id" integer, "camper_id" integer, "enrolled" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170410201231"]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveColumnnHasThemeFromCamps (20170410204625)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer, "morning_session" boolean, "afternoon_session" boolean, "has_theme" boolean) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170410204625"]]
+  [1m[35m (7.4ms)[0m  commit transaction
+Migrating to AddThemeColumnToCamps (20170411000202)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "camps" ADD "theme" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170411000202"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Migrating to RemoveCampersIdFromMemberships (20170412195750)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "amemberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp_id" integer, "camper_id" integer, "enrolled" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "memberships"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "memberships"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "camp_id" integer, "camper_id" integer, "enrolled" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "amemberships"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "amemberships"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170412195750"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveDetailsFromCamps (20170414224131)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer, "morning_session" boolean, "afternoon_session" boolean, "theme" varchar) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme_key" integer, "morning_session" boolean, "afternoon_session" boolean) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "member_fee" integer, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "non_member_fee" integer, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "two_week" boolean, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acamps"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "lunch_fee" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "camps"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "camps"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acamps"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "acamps"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414224131"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Migrating to AddDetailsToCamps (20170414224530)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "camps" ADD "description" varchar
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "camps" ADD "fee" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "camps" ADD "week_id" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414224530"]]
+  [1m[35m (5.5ms)[0m  commit transaction
+Migrating to DropThemes (20170414231250)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "themes"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414231250"]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Migrating to AddThemeToWeeks (20170414231814)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "weeks" ADD "theme" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414231814"]]
+  [1m[35m (5.4ms)[0m  commit transaction
+Migrating to RemoveStuffFromCamps (20170414235133)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "morning_session" boolean, "afternoon_session" boolean, "description" varchar, "fee" integer, "week_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "afternoon_session" boolean, "description" varchar, "fee" integer, "week_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "acamps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "afternoon_session" boolean, "description" varchar, "fee" integer, "week_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "camps"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "camps"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "camps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "age_min" integer, "age_max" integer, "start_time" time, "end_time" time, "ext_end_time" time, "ext_start_time" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar, "fee" integer, "week_id" integer) [0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "acamps"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "acamps"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170414235133"]]
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+Migrating to FixColumnName (20170414235448)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "acampers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "age" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "campers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "campers"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "campers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "gender" boolean, "birthday" date, "age" integer, "gfullname" varchar, "gbirthday" date, "street" varchar, "city" varchar, "state" varchar, "zip" integer, "homephone" varchar, "wcphone" varchar, "email" varchar, "authguardians" varchar, "prohibited" varchar, "medicalcompleted" boolean) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "acampers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "acampers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414235448"]]
+  [1m[35m (13.6ms)[0m  commit transaction
+Migrating to AddKidLimitToCamps (20170415000910)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "camps" ADD "kid_limit" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170415000910"]]
+  [1m[35m (7.4ms)[0m  commit transaction
+Migrating to ChangeWeekDate (20170416142837)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" varchar, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "weeks"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "weeks"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" date, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme" varchar) [0m
+  [1m[35m (4.3ms)[0m  SELECT * FROM "aweeks"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "aweeks"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aweeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" date, "end_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "weeks"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "weeks"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" date, "end_date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "theme" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aweeks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "aweeks"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170416142837"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+Migrating to DeviseCreateUsers (20170421225107)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170421225107"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:10:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2929.2ms)
+Completed 200 OK in 3176ms (Views: 3147.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/begin_enroll.self-8afe341ec2a22479897c7eeb8b71afefca1cb4f59dbf7c672d94cb045e7ca9eb.css?body=1" for 127.0.0.1 at 2017-04-21 19:10:32 -0400
+
+
+Started GET "/assets/campers.self-714edae8bef12e6d3e6883cd0b467835a98f73a3e78974888349573d54bddbec.css?body=1" for 127.0.0.1 at 2017-04-21 19:10:32 -0400
+
+
+Started GET "/assets/camps.self-39267e0c15b150a83600dc67572593d322fa36a0aa8eb30c94c2c7637ac36299.css?body=1" for 127.0.0.1 at 2017-04-21 19:10:32 -0400
+
+
+Started GET "/assets/application.self-8fbea5225b5506d5d665e17d1afb0d1cb9e627c3e1875ad21bf619b66cd7e142.css?body=1" for 127.0.0.1 at 2017-04-21 19:10:32 -0400
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-04-21 19:10:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 80ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enroll" for 127.0.0.1 at 2017-04-21 19:10:45 -0400
+Processing by BeginEnrollController#index as HTML
+  Rendered begin_enroll/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 130ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2017-04-21 19:10:48 -0400
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.2ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 153ms (Views: 100.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requirements" for 127.0.0.1 at 2017-04-21 19:10:50 -0400
+Processing by RequirementsController#index as HTML
+  Rendered requirements/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:13:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:13:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 142ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2017-04-21 19:13:58 -0400
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/enroll" for 127.0.0.1 at 2017-04-21 19:14:01 -0400
+Processing by BeginEnrollController#index as HTML
+  Rendered begin_enroll/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 98ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-04-21 19:14:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (4.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (6.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (7.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/users/sign_in/" for 127.0.0.1 at 2017-04-21 19:14:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (5.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 185ms (Views: 137.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-21 19:14:36 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-21 19:34:00 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-21 19:39:25 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/dan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (10.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.8ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUsers (20170421232556)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "is_admin" boolean[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170421232556"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-21 19:39:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 487ms (Views: 451.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-a31300afa9dd3888047b924c1eb038a0114ef510c7aa71d2e0423484e3c5bfcd.css?body=1" for 127.0.0.1 at 2017-04-21 19:39:57 -0400
+
+
+Started GET "/assets/buckeye-leaf-dea4437da7ca9eb20d3b689b27b8957810a34a9f29b4482d74cf912cba3811fe.png" for 127.0.0.1 at 2017-04-21 19:39:57 -0400
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-04-21 19:39:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-04-21 19:40:13 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-04-21 19:40:37 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KYH9CmPYdfpCd5/rhQmEV982N461+JPXwjcM2ffqVNtT6zCZPXlJCZ0vV7Eb7T+fEWGK/paWDTIXsP0+a6VaWA==", "user"=>{"email"=>"reeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "reeee@gmail.com"]]
+Completed 401 Unauthorized in 27ms (ActiveRecord: 2.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KYH9CmPYdfpCd5/rhQmEV982N461+JPXwjcM2ffqVNtT6zCZPXlJCZ0vV7Eb7T+fEWGK/paWDTIXsP0+a6VaWA==", "user"=>{"email"=>"reeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 528ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-21 19:40:45 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (6.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-21 19:40:58 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQ7JSENNi5Rh+SHUzzKAiSR0mcaqiPl10j1j7KzBlmhDZATbHey3Z76h6Y5R1jtB6iMktonmZ5AHupILMI6Y6w==", "user"=>{"email"=>"reeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'reeee@gmail.com' LIMIT 1
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "reeee@gmail.com"], ["encrypted_password", "$2a$11$ITMCG/LPfxyuP3Bytw/6leVcyop5jVCiYtzHk1clSHFzeyAyL7gRy"], ["created_at", "2017-04-21 23:40:59.079555"], ["updated_at", "2017-04-21 23:40:59.079555"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-04-21 23:40:59.093450"], ["current_sign_in_at", "2017-04-21 23:40:59.093450"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-04-21 23:40:59.094334"], ["id", 1]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 504ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 19:40:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2017-04-21 19:41:19 -0400
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.3ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 94ms (Views: 80.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-04-21 19:41:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requirements" for 127.0.0.1 at 2017-04-21 19:41:24 -0400
+Processing by RequirementsController#index as HTML
+  Rendered requirements/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 95ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-04-21 19:41:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requirements" for 127.0.0.1 at 2017-04-21 20:22:04 -0400
+Processing by RequirementsController#index as HTML
+  Rendered requirements/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 323ms (Views: 322.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2019a337b2148b48447c348d69465ca13e86fdd81391ddafbe9c29c8b3d0c6ef.js?body=1" for 127.0.0.1 at 2017-04-21 20:22:04 -0400
+
+
+Started GET "/requirements" for 127.0.0.1 at 2017-04-21 20:22:49 -0400
+Processing by RequirementsController#index as HTML
+  Rendered requirements/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2017-04-21 20:22:51 -0400
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.3ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-04-21 20:22:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 20:22:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2017-04-21 20:22:58 -0400
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.3ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-21 20:23:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/campers/1" for 127.0.0.1 at 2017-04-21 20:31:05 -0400
+Processing by CampersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCamper Load (0.3ms)[0m  SELECT  "campers".* FROM "campers" WHERE "campers"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 36ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Camper with 'id'=1):
+  app/controllers/campers_controller.rb:125:in `set_camper'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.4ms)
+
+
+Started GET "/campers" for 127.0.0.1 at 2017-04-21 20:31:11 -0400
+Processing by CampersController#index as HTML
+  [1m[36mCamper Load (0.3ms)[0m  [1mSELECT "campers".* FROM "campers"[0m
+  Rendered campers/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 237ms (Views: 234.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-21 20:31:12 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (73.0ms)
+  Rendered campers/new.html.erb within layouts/application (79.2ms)
+Completed 200 OK in 199ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-21 20:31:38 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (29.6ms)
+  Rendered campers/new.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 155ms (Views: 114.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-21 20:31:42 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (35.0ms)
+  Rendered campers/new.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 120ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/begin_enroll.self-8afe341ec2a22479897c7eeb8b71afefca1cb4f59dbf7c672d94cb045e7ca9eb.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/campers.self-714edae8bef12e6d3e6883cd0b467835a98f73a3e78974888349573d54bddbec.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/camps.self-39267e0c15b150a83600dc67572593d322fa36a0aa8eb30c94c2c7637ac36299.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/weeks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/choose_camps.self-e21b9ad935aa8a55b200d3574a7c828218e8ab3406dc2d0cdbd1695089c5f0b2.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/requirements.self-84ae1e02117bf08ac531107dface6300bf09785f0b8814fc48474dafb0e93219.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/welcome.self-aacc520b1d8689ffcf05670acb803668d9a06eaf129ba96e4e4bc22f0668d323.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/application.self-a31300afa9dd3888047b924c1eb038a0114ef510c7aa71d2e0423484e3c5bfcd.css?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/begin_enroll.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/weeks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/application.self-647a2c88d8086734a28f97143261ac999f361d7b5f6ee1fc909b96da3cee4d5e.js?body=1" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/assets/buckeye-leaf-dea4437da7ca9eb20d3b689b27b8957810a34a9f29b4482d74cf912cba3811fe.png" for 127.0.0.1 at 2017-04-21 20:31:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 13:57:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1337.1ms)
+Completed 200 OK in 1539ms (Views: 1476.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 13:57:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 326ms (Views: 322.7ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-04-25 14:05:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-04-25 14:05:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (110.8ms)
+Completed 200 OK in 273ms (Views: 224.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/enroll" for 127.0.0.1 at 2017-04-25 14:05:28 -0400
+Processing by BeginEnrollController#index as HTML
+  Rendered begin_enroll/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/campers" for 127.0.0.1 at 2017-04-25 14:05:35 -0400
+Processing by CampersController#index as HTML
+  [1m[35mCamper Load (0.4ms)[0m  SELECT "campers".* FROM "campers"
+  Rendered campers/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 140ms (Views: 69.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-25 14:05:37 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (61.4ms)
+  Rendered campers/new.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 238ms (Views: 202.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-25 14:06:45 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (88.1ms)
+  Rendered campers/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 209ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-25 14:07:19 -0400
+Processing by CampersController#new as HTML
+  Rendered campers/_form.html.erb (33.6ms)
+  Rendered campers/new.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-27 23:01:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CampersController#new as HTML
+Completed 401 Unauthorized in 47ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-04-27 23:01:33 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (7.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 1433ms (Views: 1399.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/camps.self-4b3ddabe1b26936d2225041ed86477a876afa2686f88f313af9afe047ef5bd7f.css?body=1" for 127.0.0.1 at 2017-04-27 23:01:35 -0400
+
+
+Started GET "/assets/users.self-e7fd0db0db3138d1364f8cd3ead9df9b37e5bf931af077c3e13a58931c7fca5d.css?body=1" for 127.0.0.1 at 2017-04-27 23:01:35 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-04-27 23:01:59 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (6.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 188ms (Views: 185.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-27 23:02:15 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJjgEi9sly6ZFulcV+kF5xv4B34RFR7nmwtx2i5iqMqbZo2UeZU+T45ovJIaIGIG4a/7RJHYX0ZXBfnCvYSmlg==", "user"=>{"email"=>"reeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'reeee@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 562ms (Views: 83.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-27 23:02:28 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gO8g0PITExVzttfLCulgyq9Q6d3jehNJaVTCKAs+27E/EU1WpOq6dGTIggVHIAcrVQcV52O3UuilWkowmNjV7Q==", "user"=>{"email"=>"reeeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'reeeee@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "reeeee@gmail.com"], ["encrypted_password", "$2a$11$e/JVkrqBwfU5dHYPyIkCRusxVkaoRX54DzcQSZR65aOiBplycMmJe"], ["created_at", "2017-04-28 03:02:29.388830"], ["updated_at", "2017-04-28 03:02:29.388830"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-04-28 03:02:29.400388"], ["current_sign_in_at", "2017-04-28 03:02:29.400388"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-04-28 03:02:29.401546"], ["id", 2]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/campers/new
+Completed 302 Found in 464ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-27 23:02:29 -0400
+Processing by CampersController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered campers/_form.html.erb (2.3ms)
+  Rendered campers/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.8ms)
+
+SyntaxError (/home/dan/404-project6/camp_recky/app/views/campers/_form.html.erb:155: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/dan/404-project6/camp_recky/app/views/campers/_form.html.erb:157: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/campers/_form.html.erb:155: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/campers/_form.html.erb:157: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/campers/new.html.erb:3:in `_app_views_campers_new_html_erb__1040998296158390856_70007400424880'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.3ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.2ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.0ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-27 23:02:55 -0400
+Processing by CampersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered campers/_form.html.erb (11.4ms)
+  Rendered campers/new.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/dan/404-project6/camp_recky/app/views/campers/_form.html.erb:155: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/dan/404-project6/camp_recky/app/views/campers/_form.html.erb:157: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/campers/_form.html.erb:155: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/campers/_form.html.erb:157: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/campers/new.html.erb:3:in `_app_views_campers_new_html_erb__1040998296158390856_70007400424880'
+
+
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.1ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/dan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.3ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-27 23:03:24 -0400
+Processing by CampersController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered campers/_form.html.erb (39.2ms)
+  Rendered campers/new.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/campers/new" for 127.0.0.1 at 2017-04-27 23:03:47 -0400
+Processing by CampersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered campers/_form.html.erb (16.1ms)
+  Rendered campers/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.1ms)
